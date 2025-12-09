@@ -4,10 +4,8 @@ const ErrorHandler = require("../../utils/errorHandler.js");
 const catchAsyncErrors = require("../../middleware/catchAsyncErrors.js");
 const Post = require("../../models/postModel.js");
 const jwt = require("jsonwebtoken");
-const Comment = require("../../models/CommentModel.js");
-
 const router = express.Router();
-
+const Comment = require("../../models/niggaModel");
 // Función helper para normalizar usuario en comentarios
 const normalizeUserForComment = (user) => {
   if (!user) return null;
