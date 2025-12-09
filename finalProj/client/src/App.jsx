@@ -4,7 +4,6 @@ import { store } from "./store";
 import HomePage from "./components/pages/Home/HomePage";
 import RegisterPage from "./components/pages/register/RegisterPage";
 import LoginPage from "./components/pages/login/LoginPage"; // Necesitarás crear esto
-import MiiStyleEditor from "./components/MiiStyleEditor";
 import ProfilePage from "./components/pages/profile/ProfilePage";
 import ForumPage from "./components/pages/forum/ForumPage";
 import MeetPage from "./components/pages/meet/MeetPage";
@@ -19,7 +18,6 @@ function App() {
       <div className="bg-zinc-50 min-h-[100vh]">
         <BrowserRouter>
           <Routes>
-            <Route path="/test" element={<MiiStyleEditor />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/login" element={<LoginPage />} />
 
