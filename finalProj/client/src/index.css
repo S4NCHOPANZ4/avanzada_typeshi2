@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.xbox-gradient {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 25%, #16a34a 50%, #15803d 75%, #166534 100%);
+    min-height: 100vh;
+    width: 100%;
+}
+.default-background {
+  background-image: url('/defbg.png');
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat; 
+}

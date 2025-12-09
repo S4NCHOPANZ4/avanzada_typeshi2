@@ -15,7 +15,8 @@ const port = process.env.PORT || 3030;
 const userRoutes = require('./routes/user/user_routes.js');
 const spaceRoutes = require('./routes/space/space_routes.js');
 const postRoutes = require('./routes/post/posts_routes.js');
-
+const notificationRoutes = require('./routes/notification/notification_routes.js');
+const commentRoutes = require('./routes/comments/comment_routes.js');
 //app use middlewares
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -34,6 +35,8 @@ connectDB();
 app.use('/user', userRoutes);
 app.use('/space', spaceRoutes);
 app.use('/post', postRoutes);
+app.use('/notification', notificationRoutes);
+app.use('/comments', commentRoutes);
 app.use('/', (req, res) =>{
     res.send('Test Route Running!')
 });
